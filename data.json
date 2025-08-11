@@ -1,0 +1,26 @@
+[
+  {
+    "code": "ABC123456",
+    "orderNumber": "3965046620184846",
+    "status": "Entregado",
+    "destination": { "city": "Barrancabermeja", "department": "Santander" },
+    "steps": ["Orden confirmada.", "Rumbo al almacén", "En camino a tu domicilio", "Tu paquete es el siguiente", "Entregado"],
+    "history": [
+      { "datetime": "2025-06-10 10:03:47", "status": 360, "desc": "Entregado al cliente", "location": "Santander - Barrancabermeja" },
+      { "datetime": "2025-06-10 10:01:01", "status": 303, "desc": "Paquete próximo en entrega", "location": "Santander - Barrancabermeja" },
+      { "datetime": "2025-06-10 08:39:14", "status": 301, "desc": "Asignado a ruta de última milla", "location": "Santander - Barrancabermeja" },
+      { "datetime": "2025-06-09 06:48:54", "status": 131, "desc": "Descontenerizado", "location": "Cundinamarca - Barrios Unidos" }
+    ]
+  },
+  {
+    "code": "XYZ987654",
+    "orderNumber": "1234567890123456",
+    "status": "En camino",
+    "destination": { "city": "Bogotá", "department": "Cundinamarca" },
+    "steps": ["Orden confirmada.", "Rumbo al almacén", "En camino a tu domicilio", "Tu paquete es el siguiente", "Entregado"],
+    "history": [
+      { "datetime": "2025-06-12 09:12:30", "status": 301, "desc": "Asignado a ruta de última milla", "location": "China - Shanghai" },
+      { "datetime": "2025-06-11 22:10:05", "status": 131, "desc": "Recibido en centro de distribución", "location": "China - Shanghai" }
+    ]
+  }
+]

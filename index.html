@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rastrea tu paquete</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div id="searchView" class="card">
+      <h1>Rastrea tu paquete</h1>
+      <p class="muted">Ingresa tu código de rastreo</p>
+      <input id="codeInput" placeholder="Ingresa aquí el código de rastreo" />
+      <button id="trackBtn">RASTREAR PAQUETE</button>
+      <p id="notFound" class="muted small" style="display:none;color:#e74c3c">No se encontró el código.</p>
+    </div>
+
+    <div id="resultView" class="card" style="display:none">
+      <div class="statusHeader">
+        <p class="muted">El estatus de tu pedido es:</p>
+        <h2 id="statusTitle">Entregado</h2>
+        <p class="small">Número de orden: <span id="orderNumber"></span></p>
+        <p class="muted tiny">La entrega es de 8 am hasta las 21 hrs<br><strong>No hay una hora programada de entrega para tu paquete</strong></p>
+      </div>
+
+      <div id="stepsWrapper" class="steps"></div>
+
+      <div class="timeline">
+        <div id="timelineDots" class="dots"></div>
+      </div>
+
+      <div class="destination">
+        <h4>Destino</h4>
+        <p id="destCity"></p>
+      </div>
+
+      <table class="history">
+        <thead>
+          <tr><th>Fecha/Hora</th><th>Status</th><th>Descripción</th><th>Ubicación</th></tr>
+        </thead>
+        <tbody id="historyBody"></tbody>
+      </table>
+
+      <div style="text-align:center;margin-top:18px">
+        <button id="backBtn" class="ghost">Buscar otro</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
